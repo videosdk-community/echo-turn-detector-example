@@ -15,6 +15,8 @@ Copy [`.env.example`](.env.example) at the repo root to `.env` and fill in: `DEE
 
 For VideoSDK auth, set **either** `VIDEOSDK_AUTH_TOKEN` **or** `VIDEOSDK_API_KEY` + `VIDEOSDK_SECRET_KEY` (the SDK auto-mints a JWT from the API key/secret at runtime).
 
+Get these credentials from the [VideoSDK Dashboard](https://app.videosdk.live/dashboard/) under **API Keys**.
+
 2. Create the environment
 
 - On MacOS/Linux
