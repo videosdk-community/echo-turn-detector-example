@@ -2,10 +2,14 @@
 
 The Echo Turn Detector (TurnV2) utilizes a custom fine-tuned model from VideoSDK to accurately determine whether a user has finished speaking. This allows for precise management of conversation flow, especially in cascading pipeline setups. It operates as a server-hosted multilingual model on the VideoSDK Inference Gateway, with options for low latency (`echo-small`) or high accuracy (`echo-large`).
 
+## Architecture
+
+![VideoSDK AI Agents High Level Architecture](https://assets.videosdk.live/static-assets/ghost/2026/06/echo-turn-detection-architecture.png)
+
 ## Learn More
 
-- 📖 **[Documentation](https://docs.videosdk.live/echo-turn-detector)** — Full API reference, configuration options, and integration guides for the Echo Turn Detector.
-- ✍️ **[Blog](https://blog.example.com/echo-turn-detector)** — Read about how the Echo Turn Detector works, benchmarks.
+- 📖 **[Documentation](https://docs.videosdk.live/ai_agents/core-components/turn-detection)** — Full API reference, configuration options, and integration guides for the Echo Turn Detector.
+- ✍️ **[Blog](https://www.videosdk.live/blog/echo-turn-detection)** — Read about how the Echo Turn Detector works, benchmarks.
 
 ## Get Started
 
@@ -138,3 +142,15 @@ Here is a list of the supported languages:
 Unlike other detectors that require downloading models locally, the **Echo Turn Detector** is fully server-hosted on the **VideoSDK Inference Gateway**.
 
 No local model download or setup is required. The model is ready to use instantly, reducing startup latency and agent worker resource consumption.
+
+## VideoSDK Agents
+
+Build and deploy production-ready AI voice & video agents with [VideoSDK](https://videosdk.live). This repo is your central hub for agent templates, feature examples, and everything you need to ship real-world AI-powered applications.
+
+| Resource | Description |
+|---|---|
+| 🚀 [Use Case Examples](https://github.com/videosdk-live/agents/tree/main/use_case_examples) | Production-ready templates across Customer Support, Healthcare, Tech Support & more |
+| ⚡ [Feature Examples](https://github.com/videosdk-live/agents/tree/main/examples) | Always up-to-date examples showcasing the latest VideoSDK Agent features |
+| 📖 [AI Agents Docs](https://docs.videosdk.live/ai_agents/introduction) | Full guides, concepts & API references to get you started |
+
+> ⭐ If this helps you, star this repo and [`videosdk-live/agents`](https://github.com/videosdk-live/agents) — it keeps us motivated to ship more!
