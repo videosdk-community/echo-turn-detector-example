@@ -15,7 +15,7 @@ The Echo Turn Detector (TurnV2) utilizes a custom fine-tuned model from VideoSDK
 
 1. Set environment variables
 
-Copy [`.env.example`](.env.example) at the repo root to `.env` and fill in: `DEEPGRAM_API_KEY`, `ELEVENLABS_API_KEY`, `OPENAI_API_KEY`.
+Copy [`.env.example`](.env.example) at the repo root to `.env` and fill in: `VIDEOSDK_AUTH_TOKEN`.
 
 For VideoSDK auth, set **either** `VIDEOSDK_AUTH_TOKEN` **or** `VIDEOSDK_API_KEY` + `VIDEOSDK_SECRET_KEY` (the SDK auto-mints a JWT from the API key/secret at runtime).
 
@@ -30,6 +30,10 @@ python3 -m venv .venv
 ```
 
 - On Windows
+
+```bash
+python -m venv .venv
+```
 
 Next, Activate it! Command differ based on your environment
 
