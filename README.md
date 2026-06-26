@@ -4,7 +4,7 @@ The Echo Turn Detector (TurnV2) utilizes a custom fine-tuned model from VideoSDK
 
 ## Architecture
 
-![VideoSDK AI Agents High Level Architecture](https://assets.videosdk.live/static-assets/ghost/2026/06/echo-turn-detection-architecture.png)
+![VideoSDK AI Agents High Level Architecture](https://assets.videosdk.live/static-assets/ghost/2026/06/echo_turn_detector_architecture.png)
 
 ## Learn More
 

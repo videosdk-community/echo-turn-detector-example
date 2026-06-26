@@ -1,5 +1,3 @@
 videosdk-agents
-videosdk-plugins-openai
-videosdk-plugins-deepgram
-videosdk-plugins-elevenlabs
-"videosdk-agents[console]"
+videosdk-plugins-silero
+dotenv
