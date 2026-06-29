@@ -1,6 +1,9 @@
+from dotenv import load_dotenv
 from videosdk.agents import Agent, AgentSession,Pipeline, JobContext, RoomOptions, WorkerJob
 from videosdk.plugins.silero import SileroVAD
 from videosdk.agents.inference import LLM, TTS, STT
+
+load_dotenv()
 
 
 from videosdk.agents.inference import TurnV2
@@ -10,7 +13,7 @@ class MyVoiceAgent(Agent):
         super().__init__(
             instructions=(
                 "You are VideoSDK's Voice Agent. You are a helpful voice assistant "
-                "that can answer questions about the weather. "
+                "that can answer questions about the weather. if user tells you to stop then just reply with 'okay'"
                 "when ever user asks for the joke tell them this joke : 'Why did the dinosaur cross the road? Because chickens didn't exist yet'"
             ),
             use_base_instructions=True
