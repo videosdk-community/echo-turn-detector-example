@@ -15,13 +15,11 @@ Most turn detectors answer one question: has the user stopped talking? Echo answ
 
 ## Get Started
 
-Requires Python 3.9+ and a free VideoSDK account, no credit card required, and new accounts get ₹2,000 (~$23) in free credits to test with.
+Requires Python 3.11+ and a free VideoSDK account, no credit card required, and new accounts get ₹2,000 (~$23) in free credits to test with.
 
 1. Set environment variables
 
 Copy [`.env.example`](.env.example) at the repo root to `.env` and fill in: `VIDEOSDK_AUTH_TOKEN`.
-
-For VideoSDK auth, set **either** `VIDEOSDK_AUTH_TOKEN` **or** `VIDEOSDK_API_KEY` + `VIDEOSDK_SECRET_KEY` (the SDK auto-mints a JWT from the API key/secret at runtime).
 
 Get these credentials from the [VideoSDK Dashboard](https://app.videosdk.live/dashboard/) under **API Keys**.
 
