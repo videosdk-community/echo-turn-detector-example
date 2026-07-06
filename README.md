@@ -1,6 +1,8 @@
 # Echo Turn Detector
 
-The Echo Turn Detector (TurnV2) utilizes a custom fine-tuned model from VideoSDK to accurately determine whether a user has finished speaking. This allows for precise management of conversation flow, especially in cascading pipeline setups. It operates as a server-hosted multilingual model on the VideoSDK Inference Gateway, with options for low latency (`echo-small`) or high accuracy (`echo-large`).
+An example project showing how to use Echo (TurnV2), a turn-detection model for voice agents, inside an STT–LLM–TTS pipeline.
+
+Most turn detectors answer one question: has the user stopped talking? Echo answers a more useful one: what kind of pause is this? It sorts every pause into one of four states, so your agent can tell the difference between a user who's finished, a user who's mid-thought, and a user who just said "mhm" while the agent was still speaking.
 
 ## Architecture
 
@@ -12,6 +14,8 @@ The Echo Turn Detector (TurnV2) utilizes a custom fine-tuned model from VideoSDK
 - ✍️ **[Blog](https://www.videosdk.live/blog/echo-turn-detection)** — Read about how the Echo Turn Detector works, benchmarks.
 
 ## Get Started
+
+Requires Python 3.9+ and a free VideoSDK account, no credit card required, and new accounts get ₹2,000 (~$23) in free credits to test with.
 
 1. Set environment variables
 
@@ -47,7 +51,7 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-4. Run Agent Worker
+4. Run Agent
 
 ```bash
 python main.py console
